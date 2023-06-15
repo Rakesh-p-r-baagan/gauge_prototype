@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.gaugue_container{
+    height: 303px;
+    width: 303px;
+    /* border: 3px solid black; */
+    margin: 100px auto;
+    overflow: hidden;
+    
+}
+
+/* spped text in the center of the gaugue */
+.speedometer_text{
+    width: 180px;
+    position: absolute;
+    z-index: 20;
+    left:58px;
+    top: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.static {
+    font-size: 18px;
+}
+
+.dynamic {
+    margin-top: 10px;
+}
+.km{
+    font-size: 32px;
+}
+.unti{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+/* gaugue layout */
+
+
+ .speedometer_container{
+    height: 300px;
+    width:300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin:auto;
+    position: relative;
+}
+
+ .center_point{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;  
+    top:137px;       /* container 300px, 3px border => 300-3+3=294 is effective size of container therefore to aline the point-center of size 20px to center,(294-20)/2=137px */
+    left: 137px;
+    z-index: 11;
+}
+
+.speedometer_scale{
+    width:8px;
+    height:280px;
+    background-color: black;
+    position: absolute;
+    /*8px scale width + 6px border of container t.f remaining width of container is 300-6-8=266
+    half of it is 143 */
+    left: 143px;
+    /* 280px scale height + 6px border of container t.f ramining height of container is 300-286=14
+    half of it is 7px */
+    top:7px;
+    transform: rotate(-90deg);
+
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_1{
+    transform: rotate(-90deg);
+    background-color: darkgreen;
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_2{
+    transform: rotate(-80deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_3{
+    transform: rotate(-70deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_4{
+    transform: rotate(-60deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_5{
+    transform: rotate(-50deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_6{
+    transform: rotate(-40deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_7{
+    transform: rotate(-30deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_8{
+    transform: rotate(-20deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_9{
+    transform: rotate(-10deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_10{
+    transform: rotate(0deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_11{
+    transform: rotate(10deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_12{
+    transform: rotate(20deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_13{
+    transform: rotate(30deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_14{
+    transform: rotate(40deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_15{
+    transform: rotate(50deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_16{
+    transform: rotate(60deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_17{
+    transform: rotate(70deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_18{
+    transform: rotate(80deg);
+}
+
+.gaugue_container .speedometer_container .speedometer_scale_19{
+    transform: rotate(90deg);
+    height: 244px;/* the height top and left of  is changes only for this class because this and first class over lap and the colour of the first class cant be seen as that is behind this calass*/
+    top: 25px;
+    left:161px;
+}
+
+.speedometer_scale_1.active{
+    background-color: green;
+}
+.speedometer_scale_2.active{
+    background-color: rgb(16, 137, 16);
+}
+.speedometer_scale_3.active{
+    background-color: rgb(46, 128, 46);
+}
+.speedometer_scale_4.active{
+    background-color: rgb(98, 177, 98);
+}
+.speedometer_scale_5.active{
+    background-color: rgb(143, 217, 143);
+}
+.speedometer_scale_6.active{
+    background-color: rgb(177, 175, 52);
+}
+.speedometer_scale_7.active{
+    background-color: rgb(173, 210, 23);
+}
+.speedometer_scale_8.active{
+    background-color: rgb(203, 212, 18);
+}
+.speedometer_scale_9.active{
+    background-color: rgb(193, 233, 13);
+}
+.speedometer_scale_10.active{
+    background-color: rgb(214, 189, 23);
+}
+.speedometer_scale_11.active{
+    background-color: rgb(233, 207, 8);
+}
+.speedometer_scale_12.active{
+    background-color: rgb(246, 215, 13);
+}
+.speedometer_scale_13.active{
+    background-color: rgb(219, 174, 11);
+}
+.speedometer_scale_14.active{
+    background-color: rgb(216, 148, 13);
+}
+.speedometer_scale_15.active{
+    background-color: rgb(208, 131, 8);
+}
+.speedometer_scale_16.active{
+    background-color: rgb(193, 82, 8);
+}
+.speedometer_scale_17.active{
+    background-color: rgb(215, 73, 11);
+}
+.speedometer_scale_18.active{
+    background-color: rgb(179, 57, 41);
+}
+.speedometer_scale_19.active{
+    background-color: rgb(161, 13, 8);
+}
+
+.gaugue_container .speedometer_container .speedometer_center_hide{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    /* container width 300px its boder 6px effictive odth 300-6=294
+    294-250=44 remaining height,half of that = 22 */
+    top: 22px;
+    left: 22px;
+    z-index:10;
+}
+
+.gaugue_container .speedometer_container .speedometer_bottom_hide{
+    background-color: white;
+    width: 320px;
+    height: 250px;
+    position: absolute;
+    left:-14px;
+    top:160px;
+    z-index: 12;
+    border-top: solid 3px black;
+}
+
+.gaugue_container .speedometer_container .arrow_container{
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 12;
+    /* 294-160=134 => 134/2=67 */
+    top: 67px;
+    left:67px;
+    transition: all 0.4s;
+}
+
+.arrow_wrapper{
+    width: 160px;
+    height: 160px;
+    background-color:transparent;
+    position: relative;
+    transition: all 0.4s;
+    
+}
+
+.arrow{
+    width: 110px;
+    height: 4px;
+    background-color: purple;
+    position: absolute;
+    top:78px;
+    left:-30px;
+
+}
+
+.speed_0{
+    transform: rotate(0deg);
+}
+
+.speed_10{
+    transform: rotate(10deg);
+}
+.speed_20{
+    transform: rotate(20deg);
+}
+.speed_30{
+    transform: rotate(30deg);
+}
+.speed_40{
+    transform: rotate(40deg);
+}
+.speed_50{
+    transform: rotate(50deg);
+}
+.speed_60{
+    transform: rotate(60deg);
+}
+.speed_70{
+    transform: rotate(70deg);
+}
+.speed_80{
+    transform: rotate(80deg);
+}
+.speed_90{
+    transform: rotate(90deg);
+}
+.speed_100{
+    transform: rotate(100deg);
+}
+.speed_110{
+    transform: rotate(110deg);
+}.speed_120{
+    transform: rotate(120deg);
+}
+.speed_130{
+    transform: rotate(130deg);
+}
+.speed_140{
+    transform: rotate(140deg);
+}
+.speed_150{
+    transform: rotate(150deg);
+}
+.speed_160{
+    transform: rotate(160deg);
+}
+.speed_170{
+    transform: rotate(170deg);
+}
+.speed_180{
+    transform: rotate(180deg);
+}
+
+

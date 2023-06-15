@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaugue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gaugue_container">
+        <div class="speedometer_container">
+            <div class="speedometer_text">
+                <div class="static">Speed</div>  <!--name in the midle of the haugue here it is speed-->
+                <div class="dynamic">
+                    <span class="km">0</span>  
+                    <span class="unit">KMPH</span>
+                </div>
+            </div>
+            <div class="center_point"></div>
+            <div class="speedometer_center_hide"></div>
+            <div class="speedometer_bottom_hide"></div>
+
+            <div class="arrow_container">
+                <!-- if we rotate the arrow_wrapper the arrow will also rotate due their positioning valus in css -->
+                <div class="arrow_wrapper"> <!--speed_number class is add to this div to rotate the needle-->
+                    <div class="arrow"></div>
+                </div>
+
+            </div>
+
+          <!--containers of the indicator point near the border of the circle -->
+            <div class="speedometer_scale speedometer_scale_1 active"></div>
+            <div class="speedometer_scale speedometer_scale_2 active"></div>
+            <div class="speedometer_scale speedometer_scale_3 active"></div>
+            <div class="speedometer_scale speedometer_scale_4 active"></div>
+            <div class="speedometer_scale speedometer_scale_5 active"></div>
+            <div class="speedometer_scale speedometer_scale_6 active"></div>
+            <div class="speedometer_scale speedometer_scale_7 active"></div>
+            <div class="speedometer_scale speedometer_scale_8 active"></div>
+            <div class="speedometer_scale speedometer_scale_9 active"></div>
+            <div class="speedometer_scale speedometer_scale_10 active"></div>
+            <div class="speedometer_scale speedometer_scale_11 active"></div>
+            <div class="speedometer_scale speedometer_scale_12 active"></div>
+            <div class="speedometer_scale speedometer_scale_13 active"></div>
+            <div class="speedometer_scale speedometer_scale_14 active"></div>
+            <div class="speedometer_scale speedometer_scale_15 active"></div>
+            <div class="speedometer_scale speedometer_scale_16 active"></div>
+            <div class="speedometer_scale speedometer_scale_17 active"></div>
+            <div class="speedometer_scale speedometer_scale_18 active"></div>
+            <div class="speedometer_scale speedometer_scale_19 active"></div>
+          
+        </div>
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
